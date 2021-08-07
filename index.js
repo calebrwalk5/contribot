@@ -7,7 +7,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const allIntents = Discord.Intents.all();
 const client = new Discord.Client({ 
-    intents: allIntents 
+    intents: allIntents,
     disableMentions: 'everyone'
 });
 
