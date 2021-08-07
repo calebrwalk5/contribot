@@ -4,7 +4,7 @@ Credits to eritislami for evobot command handler.
 <br/>
 When this bot is ready for servers you will see a link here.
 
-## Invite the bot here:
+## Invite the bot to your server
 
 https://discord.com/api/oauth2/authorize?client_id=873669781335707708&permissions=8&scope=bot
 ## Repl server
