@@ -1,0 +1,27 @@
+{
+  "name": "contribot",
+  "version": "1.0.0",
+  "description": "A discord bot anyone can contribute to.<br/> Credits to eritislami for evobot command handler. <br/> When this bot is ready for servers you will see a link here.",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deniied/contribot.git"
+  },
+  "keywords": [],
+  "author": "Deniied, some made by 1nch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deniied/contribot/issues"
+  },
+  "homepage": "https://github.com/deniied/contribot#readme"
+}
