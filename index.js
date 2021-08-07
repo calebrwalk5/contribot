@@ -5,7 +5,7 @@ require('dotenv').config()
 const { DISCORD_TOKEN, PREFIX } = process.env
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-const allIntents = Discord.Intents.all();
+const allIntents = Discord.Intents.ALL
 const client = new Discord.Client({ 
     intents: allIntents,
     disableMentions: 'everyone'
