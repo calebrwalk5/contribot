@@ -4,7 +4,6 @@ module.exports = {
     name: "invite",
     description: 'Invite the bot',
     execute(message, args) {
-        let commands = message.client.commands.array();
 
         let inv = new Discord.MessageEmbed()
             .setTitle('Invite:')
