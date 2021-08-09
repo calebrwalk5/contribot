@@ -7,7 +7,7 @@ module.exports = {
 
         let member = message.mentions.members.first();
 
-        if (!member && isNaN(args[0])) {
+        if (!member) {
             member = client.users.fetch(args[0])
         }
 
