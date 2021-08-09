@@ -12,6 +12,7 @@ module.exports = {
 
         if (!member) {
             member = client.users.fetch(args[0])
+            console.log(member.id)
         }
 
         //if (!member) return message.reply("Please mention a valid member of this server " + args[0])
