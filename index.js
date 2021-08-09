@@ -16,7 +16,7 @@ client.prefix = PREFIX;
 client.on("ready", () => {
     console.log(`${client.user.username} ready!`);
     client.user.setActivity(`for ${PREFIX}help`, { type: "WATCHING" });
-    console.log(client.users.fetch("870013310785970268").id)
+    console.log(client.users.fetch("870013310785970268").Id)
 });
 
 const commandFiles = fs.readdirSync(path.join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
