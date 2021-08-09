@@ -6,6 +6,11 @@ module.exports = {
     execute(message, args) {
 
         let member = message.mentions.members.first();
+
+        if (!member && isNaN(args[0])) {
+            member = client.users.fetch(args[0])
+        }
+
         if (!message.member.hasPermission('BAN_MEMBERS')) return message.reply('You cannot ban members')
         if (!member) return message.reply("Please mention a valid member of this server");
         if (!member.kickable) return message.reply("I cannot ban this member!");
