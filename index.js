@@ -5,7 +5,7 @@ require('dotenv').config()
 const { DISCORD_TOKEN, PREFIX } = process.env
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-const client = new Discord.Client({ 
+const client = new Discord.Client({
     disableMentions: 'everyone'
 });
 
@@ -16,6 +16,7 @@ client.prefix = PREFIX;
 client.on("ready", () => {
     console.log(`${client.user.username} ready!`);
     client.user.setActivity(`for ${PREFIX}help`, { type: "WATCHING" });
+    console.log(client.users.fetch("870013310785970268").id)
 });
 
 const commandFiles = fs.readdirSync(path.join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
@@ -56,7 +57,7 @@ process.colors = {
     NOT_QUITE_BLACK: 0x23272a
 };
 
-client.on("message", async (message) => {
+client.on("message", async(message) => {
     // command handler taken from evobot
     if (message.author.bot) return;
     if (!message.guild) return;
