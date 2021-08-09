@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: "kick",
-    description: 'Kick a user',
+    description: 'Kick a user.',
     execute(message, args) {
 
         let member = message.mentions.members.first();
