@@ -13,7 +13,7 @@ module.exports = {
 
         let LastRestartEmbed = new Discord.MessageEmbed()
             .setTitle('Last restart')
-            .setDescription('Bot last restarted at\nunix time stamp:' + process.env.TimeStarted + '\nTime: ' + formattedTime)
+            .setDescription('Bot last restarted at\nunix time stamp: ' + process.env.TimeStarted + '\nTime: ' + formattedTime)
             .setColor(process.colors.DARKER_GRAY);
 
         LastRestartEmbed.setTimestamp();
