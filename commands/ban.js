@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: "ban",
-    description: 'Ban a user',
+    description: 'Ban a user.',
     execute(message, args) {
 
         let member = message.mentions.members.first();

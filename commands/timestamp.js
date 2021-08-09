@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: "timestamp",
-    description: 'Gets the current unix time stamp',
+    description: 'Gets the current unix time stamp.',
     execute(message, args) {
 
         let LastRestartEmbed = new Discord.MessageEmbed()

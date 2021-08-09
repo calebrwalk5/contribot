@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: "lastrun",
-    description: 'Gets when the bot was last restarted',
+    description: 'Gets when the bot was last restarted.',
     execute(message, args) {
 
         let LastRestartEmbed = new Discord.MessageEmbed()

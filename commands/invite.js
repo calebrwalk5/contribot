@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: "invite",
-    description: 'Invite the bot',
+    description: 'Invite the bot.',
     execute(message, args) {
 
         let inv = new Discord.MessageEmbed()
