@@ -15,7 +15,7 @@ module.exports = {
             .setTitle('Last restart')
             .setDescription('Bot last restarted at\nunix time stamp: ' + process.env.TimeStarted + '\nTime: ' + formattedTime)
             .setColor(process.colors.DARKER_GRAY)
-            .setFooter(Intl.DateTimeFormat().resolvedOptions().timeZone);
+            .setFooter("Results are shown in " + Intl.DateTimeFormat().resolvedOptions().timeZone + " timezone.");
 
         LastRestartEmbed.setTimestamp();
 
