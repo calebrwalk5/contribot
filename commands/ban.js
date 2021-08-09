@@ -11,7 +11,7 @@ module.exports = {
             member = client.users.fetch(args[0])
         }
 
-        if ((!member && !isNaN(args[0]))) return message.reply("Please mention a valid member of this server " + args[0])
+        if ((!member && !isNaN(args[0]))) return message.reply("Please mention a valid member of this server " + args[0] + " " + isNaN(args[0]))
 
         if (!message.member.hasPermission('BAN_MEMBERS')) return message.reply('You cannot ban members')
         if (!member) return message.reply("Please mention a valid member of this server");
