@@ -5,7 +5,7 @@ module.exports = {
     description: 'Gets when the bot was last restarted',
     execute(message, args) {
 
-        var date = new Date(unix_timestamp * 1000);
+        var date = new Date(process.env.TimeStarted * 1000);
         var hours = date.getHours();
         var minutes = "0" + date.getMinutes();
         var seconds = "0" + date.getSeconds();
